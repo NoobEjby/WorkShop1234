@@ -11,6 +11,10 @@ package workshopfucking1234;
  */
 public class CO2Sensor extends Sensor{
 
+    public CO2Sensor(String name) {
+        super(name);
+    }
+
     @Override
     public int getValue() {
         return super.getValue(); //To change body of generated methods, choose Tools | Templates.

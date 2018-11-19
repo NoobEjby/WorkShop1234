@@ -10,6 +10,10 @@ package workshopfucking1234;
  * @author Noob
  */
 public class TemperatureSensor extends Sensor{
+
+    public TemperatureSensor(String name) {
+        super(name);
+    }
     
     
     
