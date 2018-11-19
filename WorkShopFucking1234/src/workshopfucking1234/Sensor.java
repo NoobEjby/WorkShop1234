@@ -10,10 +10,12 @@ package workshopfucking1234;
  * @author Noob
  */
 public class Sensor extends FuckingUnit{
+
+private int value;
     
     public int getValue(){
         
-        return 5;
+        return value;
     }
     
 }
