@@ -12,6 +12,10 @@ package workshopfucking1234;
 public class Sensor extends FuckingUnit{
 
 private int value;
+
+    public Sensor(String name) {
+        super(name);
+    }
     
     public int getValue(){
         
