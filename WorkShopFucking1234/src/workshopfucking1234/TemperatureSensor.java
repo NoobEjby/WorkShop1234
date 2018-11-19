@@ -11,4 +11,17 @@ package workshopfucking1234;
  */
 public class TemperatureSensor extends Sensor{
     
+    
+    @Override
+    public int getValue(){
+        return 5;
+    }
+
+    @Override
+    public String toString() {
+        return "TemperatureSensor{" + '}';
+    }
+    
+    
+    
 }

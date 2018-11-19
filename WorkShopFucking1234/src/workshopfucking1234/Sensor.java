@@ -11,4 +11,9 @@ package workshopfucking1234;
  */
 public class Sensor extends FuckingUnit{
     
+    public int getValue(){
+        
+        return 5;
+    }
+    
 }
