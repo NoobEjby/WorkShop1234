@@ -5,12 +5,18 @@
  */
 package workshopfucking1234;
 
+import java.util.UUID;
+
 /**
  *
  * @author Noob
  */
 public class VentilationActuator extends Actuator{
     int value;
+    
+    public VentilationActuator(String name){
+        super(name);
+    }
     
     @Override
     public void setValue(int value) {
