@@ -12,8 +12,8 @@ import java.util.UUID;
  * @author jesperisgaard
  */
 public abstract class FuckingUnit {
-    public String name;
-    public UUID id;
+    private String name;
+    private UUID id;
 
     public String getName() {
         return name;
