@@ -9,6 +9,6 @@ package workshopfucking1234;
  *
  * @author Noob
  */
-public class Sensor {
+public class Sensor extends FuckingUnit{
     
 }

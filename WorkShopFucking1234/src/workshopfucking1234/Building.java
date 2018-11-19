@@ -9,6 +9,6 @@ package workshopfucking1234;
  *
  * @author Noob
  */
-public class Building {
+public class Building extends FuckingUnit{
     
 }
