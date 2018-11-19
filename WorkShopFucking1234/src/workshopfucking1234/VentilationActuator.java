@@ -10,10 +10,11 @@ package workshopfucking1234;
  * @author Noob
  */
 public class VentilationActuator extends Actuator{
-
+    int value;
+    
     @Override
     public void setValue(int value) {
-        
+        this.value = value;
     }
 
     @Override
@@ -23,7 +24,7 @@ public class VentilationActuator extends Actuator{
 
     @Override
     public String toString() {
-        return 
+        return "STAHP";
     }
     
     
