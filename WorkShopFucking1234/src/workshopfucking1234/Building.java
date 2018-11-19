@@ -16,13 +16,19 @@ import java.util.UUID;
 public class Building extends FuckingUnit{
     private List<Sensor> sensors;
     private List<Actuator> actuators;
+
+    public Building(String name) {
+        super(name);
+    }
     
     public List<Sensor> getSensors(){
+        return null;
         
         
     }
     
     public List<Actuator> getActuators(){
+        return null;
         
         
     }
