@@ -19,7 +19,7 @@ public class TemperatureSensor extends Sensor{
     
     @Override
     public int getValue(){
-        return 5;
+        return super.getValue();
     }
 
     @Override

@@ -17,12 +17,12 @@ public class CO2Sensor extends Sensor{
 
     @Override
     public int getValue() {
-        return super.getValue(); //To change body of generated methods, choose Tools | Templates.
+        return super.getValue(); 
     }
 
     @Override
     public String toString() {
-        return super.toString(); //To change body of generated methods, choose Tools | Templates.
+        return super.toString();
     }
     
     
