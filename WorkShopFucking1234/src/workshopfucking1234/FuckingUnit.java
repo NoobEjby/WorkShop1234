@@ -15,6 +15,11 @@ public abstract class FuckingUnit {
     private String name;
     private UUID id;
 
+    public FuckingUnit(String name){
+        this.name = name;
+        this.id = UUID.randomUUID();
+    }
+    
     public String getName() {
         return name;
     }
