@@ -9,6 +9,6 @@ package workshopfucking1234;
  *
  * @author Noob
  */
-public class VentilationActuator {
+public class VentilationActuator extends Actuator{
     
 }

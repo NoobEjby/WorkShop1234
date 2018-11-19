@@ -9,6 +9,6 @@ package workshopfucking1234;
  *
  * @author Noob
  */
-public class TemperatureSensor {
+public class TemperatureSensor extends Sensor{
     
 }
