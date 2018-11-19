@@ -5,12 +5,29 @@
  */
 package workshopfucking1234;
 
+import java.util.UUID;
+
 /**
  *
  * @author jesperisgaard
  */
 public abstract class FuckingUnit {
-    String name;
+    public String name;
+    public UUID id;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    
+    public UUID getId(){
+        return id;
+    }
+    
     
     @Override
     public String toString(){

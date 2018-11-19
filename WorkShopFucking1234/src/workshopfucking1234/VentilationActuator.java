@@ -10,5 +10,22 @@ package workshopfucking1234;
  * @author Noob
  */
 public class VentilationActuator extends Actuator{
+
+    @Override
+    public void setValue(int value) {
+        
+    }
+
+    @Override
+    public int getValue() {
+        return value;
+    }
+
+    @Override
+    public String toString() {
+        return 
+    }
+    
+    
     
 }

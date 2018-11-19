@@ -9,6 +9,10 @@ package workshopfucking1234;
  *
  * @author Noob
  */
-public class Actuator extends FuckingUnit{
+public abstract class Actuator extends FuckingUnit{
+    private int desiredValue;
+    
+    public abstract void setValue(int value);
+    public abstract int getValue();
     
 }
