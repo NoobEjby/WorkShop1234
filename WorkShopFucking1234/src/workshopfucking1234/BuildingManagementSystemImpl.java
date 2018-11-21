@@ -100,8 +100,16 @@ public class BuildingManagementSystemImpl implements IBuildingManagementSystem {
 
     @Override
     public UUID addCo2Sensor(UUID buildingId, String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        for(Building building : buildings){
+            if(building.getId() == buildingId){
+                CO2Sensor co2Sensor = new CO2Sensor(name);
+                building.addSensor(co2Sensor);
+                return building.getId();
+            }
+        }
+        return null;
     }
+  
 
     @Override
     public void removeSensor(UUID buildingId, UUID sensorId) {
