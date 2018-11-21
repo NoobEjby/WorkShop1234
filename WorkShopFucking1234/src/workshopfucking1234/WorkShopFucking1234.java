@@ -38,11 +38,14 @@ public class WorkShopFucking1234 {
         building2.addSensor(co2Sensor2);
         building2.addSensor(temperatureSensor2);
                 
-        
+        //adding the buildings to buildingManagement
         buildingManagement.addBuilding(building);
         buildingManagement.addBuilding(building1);
         buildingManagement.addBuilding(building2);
         
+        System.out.println(building.getSensors());
+        System.out.println(building1.getSensors());
+        System.out.println(building2.getSensors());
     }
     
 }
