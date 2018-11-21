@@ -9,16 +9,14 @@ package workshopfucking1234;
  *
  * @author Noob
  */
-public class TemperatureSensor extends Sensor{
+public class TemperatureSensor extends Sensor {
 
     public TemperatureSensor(String name) {
         super(name);
     }
-    
-    
-    
+
     @Override
-    public int getValue(){
+    public int getValue() {
         return super.getValue();
     }
 
@@ -26,7 +24,5 @@ public class TemperatureSensor extends Sensor{
     public String toString() {
         return "TemperatureSensor{" + '}';
     }
-    
-    
-    
+
 }

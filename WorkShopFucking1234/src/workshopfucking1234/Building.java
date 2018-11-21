@@ -51,11 +51,11 @@ public class Building extends FuckingUnit {
     public void removeActuator(UUID id) {
         actuators.remove(id);
     }
-    
+
     @Override
-    public String toString(){
+    public String toString() {
         return "The building " + this.getName() + " at " + this.address + " has " + sensors.size() + " sensors, " + actuators.size() + " actuators and the ID: " + this.getId() + "\n";
-    
+
     }
-    
+
 }
