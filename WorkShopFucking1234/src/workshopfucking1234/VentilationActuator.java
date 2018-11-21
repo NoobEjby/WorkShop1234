@@ -31,7 +31,7 @@ public class VentilationActuator extends Actuator {
 
     @Override
     public String toString() {
-        return "STAHP";
+        return "Ventilation actuator " + this.getName() + " has the ID " + this.getId() + " and the current value: " + this.getValue() + "\n"; 
     }
 
 }
