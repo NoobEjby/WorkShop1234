@@ -52,5 +52,10 @@ public class Building extends FuckingUnit {
         actuators.remove(id);
     }
     
+    @Override
+    public String toString(){
+        return "The building " + this.getName() + " at " + this.address + " has " + sensors.size() + " sensors, " + actuators.size() + " actuators and the ID: " + this.getId() + "\n";
+    
+    }
     
 }
