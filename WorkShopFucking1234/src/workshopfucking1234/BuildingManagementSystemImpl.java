@@ -105,12 +105,20 @@ public class BuildingManagementSystemImpl implements IBuildingManagementSystem {
 
     @Override
     public void removeSensor(UUID buildingId, UUID sensorId) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Building building = getBuilding(buildingId);
+        ArrayList<Sensor> list = building.getSensorList();
+        for (Sensor sensor : list) {
+            if (sensor.getID().equals(sensorId)) {
+                building.getSensorList().remove(sensor);
+            }
+        }
     }
 
     @Override
     public UUID addVentilationActuator(UUID buildingId, String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        Building building = getBuilding(buildingId);
+        building.addActuator(1, 3, name);
+        return building.getActuator(name).getID();
     }
 
     @Override
@@ -118,4 +126,12 @@ public class BuildingManagementSystemImpl implements IBuildingManagementSystem {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    public Building getBuilding(UUID ID) {
+        for (Building building : getBuildings()) {
+            if (building.getId() == ID) {
+                return building;
+            }
+        }
+        return null;
+    }
 }
