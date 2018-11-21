@@ -44,9 +44,9 @@ public class WorkShopFucking1234 {
         buildingManagement.addBuilding(building2);
         System.out.println(buildingManagement.getBuildings());
 
-        System.out.println(building.getSensors());
-        System.out.println(building1.getSensors());
-        System.out.println(building2.getSensors());
+        System.out.println("Within building " + building.getName() + " are the sensors:" + building.getSensors());
+        System.out.println("Within building " + building1.getName() + " are the sensors:" + building1.getSensors());
+        System.out.println("Within building " + building2.getName() + " are the sensors:" + building2.getSensors());
     }
 
 }
