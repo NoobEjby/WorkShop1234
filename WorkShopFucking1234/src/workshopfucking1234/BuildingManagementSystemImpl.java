@@ -6,6 +6,7 @@
 package workshopfucking1234;
 
 import com.sun.javafx.print.Units;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -17,7 +18,7 @@ public class BuildingManagementSystemImpl {
     private List<Building> buildings;
 
     public BuildingManagementSystemImpl() {
-        
+        buildings = new ArrayList<>();
     }
     
     
