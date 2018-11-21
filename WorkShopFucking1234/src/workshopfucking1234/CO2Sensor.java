@@ -22,7 +22,7 @@ public class CO2Sensor extends Sensor {
 
     @Override
     public String toString() {
-        return "CO2-sensor " + this.getName() + " has the ID " + this.getId() + " and the current value: " + this.getValue(); 
+        return "CO2-sensor " + this.getName() + " has the ID " + this.getId() + " and the current value: " + this.getValue() + "\n"; 
     }
 
 }
