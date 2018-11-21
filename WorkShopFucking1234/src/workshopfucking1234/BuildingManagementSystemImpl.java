@@ -5,6 +5,7 @@
  */
 package workshopfucking1234;
 
+import com.sun.javafx.print.Units;
 import java.util.List;
 import java.util.UUID;
 
@@ -13,16 +14,30 @@ import java.util.UUID;
  * @author Noob
  */
 public class BuildingManagementSystemImpl {
-    private List buildings;
+    private List<Building> buildings;
+
+    public BuildingManagementSystemImpl() {
+        
+    }
+    
     
     public List<Building> getBuildings(){
         return buildings;
     }
     
     public void addBuilding(Building b){
-        
+        buildings.add(b);
+                
     }
     public void removeBuilding(UUID id){
+        
+        for (Building b : buildings) {
+            if (id == b.getId()) {
+                buildings.remove(b);
+                
+            }
+            
+        }
         
     }
     

@@ -36,6 +36,6 @@ public abstract class FuckingUnit {
     
     @Override
     public String toString(){
-        return "Something went wrong";
+        return this.name + this.id;
     }
 }
