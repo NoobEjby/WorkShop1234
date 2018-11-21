@@ -17,31 +17,32 @@ import java.util.UUID;
  * @author Noob
  */
 public class BuildingManagementSystemImpl implements IBuildingManagementSystem {
+
     private List<Building> buildings;
 
     public BuildingManagementSystemImpl() {
         buildings = new ArrayList<>();
     }
-    
-    
-    public List<Building> getBuildings(){
+
+    public List<Building> getBuildings() {
         return buildings;
     }
-    
-    public void addBuilding(Building b){
+
+    public void addBuilding(Building b) {
         buildings.add(b);
-                
+
     }
-    public void removeBuilding(UUID id){
-        
+
+    public void removeBuilding(UUID id) {
+
         for (Building b : buildings) {
             if (id == b.getId()) {
                 buildings.remove(b);
-                
+
             }
-            
+
         }
-        
+
     }
 
     @Override
@@ -86,7 +87,15 @@ public class BuildingManagementSystemImpl implements IBuildingManagementSystem {
 
     @Override
     public UUID addTemperatureSensor(UUID buildingId, String name) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        TemperatureSensor temp = new TemperatureSensor(name);
+        for (Building building : getBuildings()) {
+            if (building.getId() == buildingId) {
+                building.addSensor(temp);
+
+            }
+
+        }
+        return temp.getId();
     }
 
     @Override
@@ -108,5 +117,5 @@ public class BuildingManagementSystemImpl implements IBuildingManagementSystem {
     public void removeActuator(UUID buildingId, UUID actuatorId) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
 }
