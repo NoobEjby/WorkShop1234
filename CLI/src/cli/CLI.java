@@ -17,7 +17,7 @@ public class CLI {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        IBuildingManagementSystem File = new BuildingManagementSystemImpl();
+        Reader ja = new Reader();
     }
     
 }
