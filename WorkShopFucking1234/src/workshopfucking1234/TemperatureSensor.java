@@ -9,24 +9,20 @@ package workshopfucking1234;
  *
  * @author Noob
  */
-public class TemperatureSensor extends Sensor{
+public class TemperatureSensor extends Sensor {
 
     public TemperatureSensor(String name) {
         super(name);
     }
-    
-    
-    
+
     @Override
-    public int getValue(){
+    public int getValue() {
         return super.getValue();
     }
 
     @Override
     public String toString() {
-        return "TemperatureSensor{" + '}';
+        return "Temperature-sensor " + this.getName() + " has the ID " + this.getId() + " and the current value: " + this.getValue();
     }
-    
-    
-    
+
 }

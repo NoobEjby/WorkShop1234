@@ -9,17 +9,17 @@ package workshopfucking1234;
  *
  * @author Noob
  */
-public class Sensor extends FuckingUnit{
+public class Sensor extends FuckingUnit {
 
-private int value;
+    private int value;
 
     public Sensor(String name) {
         super(name);
     }
-    
-    public int getValue(){
-        
+
+    public int getValue() {
+
         return value;
     }
-    
+
 }
