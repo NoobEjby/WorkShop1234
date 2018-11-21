@@ -20,6 +20,7 @@ public class Reader {
     BuildingManagementSystemImpl File = new BuildingManagementSystemImpl();
     public Reader() {
         help();
+        play();
     }
 
     private void play() {
@@ -40,7 +41,7 @@ public class Reader {
                 File.addBuilding(content);
             } else*/ if (token.equals(
                     "getbuildings")) {
-                File.getBuildings();
+                System.out.print(File.getBuildings());
             } else if (token.equals(
                     "removebuilding")) {
                 System.out.println("Which building to remove?");
