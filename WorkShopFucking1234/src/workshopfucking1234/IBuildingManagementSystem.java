@@ -71,5 +71,5 @@ public interface IBuildingManagementSystem {
      * @param actuatorId id of actuator to remove.
      */
     public void removeActuator(UUID buildingId, UUID actuatorId);
-    
+        
 }
