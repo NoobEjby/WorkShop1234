@@ -12,14 +12,15 @@ import java.util.UUID;
  * @author jesperisgaard
  */
 public abstract class FuckingUnit {
+
     private String name;
     private UUID id;
 
-    public FuckingUnit(String name){
+    public FuckingUnit(String name) {
         this.name = name;
         this.id = UUID.randomUUID();
     }
-    
+
     public String getName() {
         return name;
     }
@@ -27,15 +28,13 @@ public abstract class FuckingUnit {
     public void setName(String name) {
         this.name = name;
     }
-    
-    
-    public UUID getId(){
+
+    public UUID getId() {
         return id;
     }
-    
-    
+
     @Override
-    public String toString(){
-        return this.name + " "+ this.id+"\n";
+    public String toString() {
+        return this.name + " " + this.id + "\n";
     }
 }

@@ -11,13 +11,14 @@ import java.util.UUID;
  *
  * @author Noob
  */
-public class VentilationActuator extends Actuator{
+public class VentilationActuator extends Actuator {
+
     int value;
-    
-    public VentilationActuator(String name){
+
+    public VentilationActuator(String name) {
         super(name);
     }
-    
+
     @Override
     public void setValue(int value) {
         this.value = value;
@@ -32,7 +33,5 @@ public class VentilationActuator extends Actuator{
     public String toString() {
         return "STAHP";
     }
-    
-    
-    
+
 }

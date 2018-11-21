@@ -9,7 +9,7 @@ package workshopfucking1234;
  *
  * @author Noob
  */
-public class CO2Sensor extends Sensor{
+public class CO2Sensor extends Sensor {
 
     public CO2Sensor(String name) {
         super(name);
@@ -17,14 +17,12 @@ public class CO2Sensor extends Sensor{
 
     @Override
     public int getValue() {
-        return super.getValue(); 
+        return super.getValue();
     }
 
     @Override
     public String toString() {
         return super.toString();
     }
-    
-    
-    
+
 }
