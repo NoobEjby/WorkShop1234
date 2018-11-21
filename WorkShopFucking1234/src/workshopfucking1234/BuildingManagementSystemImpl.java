@@ -58,30 +58,28 @@ public class BuildingManagementSystemImpl implements IBuildingManagementSystem {
     @Override
     public Map<UUID, String> getSensorInformation(UUID buildingId) {
         Map<UUID, String> sensorMap = new HashMap<>();
-        for (Building building : getBuildings()) {
-            if (building.getId() == buildingId) {
-                building.getSensors();
-                for (Sensor sens : building.getSensors()) {
-                    sensorMap.put(sens.getId(), sens.getName());
-                }
+        Building building = getBuilding(buildingId);
+        if (getBuilding(buildingId).getId() == buildingId) {
+            building.getSensors();
+            for (Sensor sens : building.getSensors()) {
+                sensorMap.put(sens.getId(), sens.getName());
             }
-
         }
+
         return sensorMap;
     }
 
     @Override
     public Map<UUID, String> getActuatorInformation(UUID buildingId) {
         Map<UUID, String> actuatorMap = new HashMap<>();
-        for (Building building : getBuildings()) {
-            if (building.getId() == buildingId) {
-                building.getActuators();
-                for (Actuator actuator : building.getActuators()) {
-                    actuatorMap.put(actuator.getId(), actuator.getName());
-                }
+        Building building = getBuilding(buildingId);
+        if (building.getId() == buildingId) {
+            building.getActuators();
+            for (Actuator actuator : building.getActuators()) {
+                actuatorMap.put(actuator.getId(), actuator.getName());
             }
-
         }
+
         return actuatorMap;
     }
 
@@ -100,16 +98,15 @@ public class BuildingManagementSystemImpl implements IBuildingManagementSystem {
 
     @Override
     public UUID addCo2Sensor(UUID buildingId, String name) {
-        for(Building building : buildings){
-            if(building.getId() == buildingId){
-                CO2Sensor co2Sensor = new CO2Sensor(name);
-                building.addSensor(co2Sensor);
-                return building.getId();
-            }
+        Building building = getBuilding(buildingId);
+        if (building.getId() == buildingId) {
+            CO2Sensor co2Sensor = new CO2Sensor(name);
+            building.addSensor(co2Sensor);
+            return building.getId();
         }
+
         return null;
     }
-  
 
     @Override
     public void removeSensor(UUID buildingId, UUID sensorId) {
