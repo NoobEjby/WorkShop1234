@@ -22,7 +22,7 @@ public class TemperatureSensor extends Sensor {
 
     @Override
     public String toString() {
-        return "TemperatureSensor{" + '}';
+        return "Temperature-sensor " + this.getName() + " has the ID " + this.getId() + " and the current value: " + this.getValue();
     }
 
 }
