@@ -114,10 +114,10 @@ public class BuildingManagementSystemImpl implements IBuildingManagementSystem {
     @Override
     public void removeSensor(UUID buildingId, UUID sensorId) {
         Building building = getBuilding(buildingId);
-        ArrayList<Sensor> list = building.getSensorList();
+        List<Sensor> list = building.getSensors();
         for (Sensor sensor : list) {
-            if (sensor.getID().equals(sensorId)) {
-                building.getSensorList().remove(sensor);
+            if (sensor.getId().equals(sensorId)) {
+                building.getSensors().remove(sensor);
             }
         }
     }
@@ -125,8 +125,9 @@ public class BuildingManagementSystemImpl implements IBuildingManagementSystem {
     @Override
     public UUID addVentilationActuator(UUID buildingId, String name) {
         Building building = getBuilding(buildingId);
-        building.addActuator(1, 3, name);
-        return building.getActuator(name).getID();
+        Actuator actuator = new VentilationActuator(name);
+        building.addActuator(actuator);
+        return actuator.getId();
     }
 
     @Override
